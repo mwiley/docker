@@ -109,7 +109,7 @@ var langs = module.exports = {
   //   comment: '//' //, multiLine: [ /\/\*/, /\*\// ]
   // },
   scss: {
-    extensions: [ 'scss' ],
+    extensions: [ 'scss', 'css.scss' ],
     comment: '//', multiLine: [ /\/\*\*?/, /\*\// ], jsDoc: true
   },
   makefile: {
