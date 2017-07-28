@@ -14,7 +14,7 @@
 
 var langs = module.exports = {
   javascript: {
-    extensions: [ 'js' ],
+    extensions: [ 'js', 'js.erb' ],
     executables: [ 'node' ],
     comment: '//', multiLine: [ /\/\*\*?/, /\*\// ], commentsIgnore: /^\s*\/\/=/, jsDoc: true,
     literals: [

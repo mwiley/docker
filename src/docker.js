@@ -570,8 +570,8 @@ Docker.prototype.parseSections = function(data, lang) {
  */
 Docker.prototype.detectLanguage = function(filename, contents) {
   // First try to detect the language from the file extension
-  var ext = path.extname(filename);
-  ext = ext.replace(/^\./, '');
+  var ext = path.basename(filename);
+  ext = ext.substr(ext.indexOf('.') + 1, ext.length);
 
   // Bit of a hacky way of incorporating .C for C++
   if (ext === '.C') return languages.cpp;
